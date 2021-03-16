@@ -12,4 +12,4 @@ View의 계층구조를 배우면서 화씨를 섭씨로 변경하는 앱을 구
 First Responder, UITextFieldDelegation 등을 추가하여 제작했습니다.<br>
 <br>
 ### 4th week
-3주차 실습에서 label들을 autolayer를 적용하여 규칙적인 간격을 가질 수 있도록 적용했습니다.
+3주차 실습에서 사용했던 label들에 autolayer를 적용해 label들이 규칙적인 간격을 가질 수 있도록 적용했습니다.
