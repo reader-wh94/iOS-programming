@@ -1,5 +1,4 @@
 # 🍎iOS-programming
-<hr />
 ### 1st week (ch01-1891321-simpleApp)
 xcode를 이용하여 간단한 퀴즈 앱을 구현<br>
 Question과 Answer button을 눌러 질문과 답을 볼 수 있도록 구현
