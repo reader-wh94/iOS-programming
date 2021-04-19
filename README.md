@@ -44,6 +44,6 @@ Pod을 이용하여 Apple 라이브러리를 설치했으며 Main Thread와 SubT
 
 ### 8th week
 
-카메라 관련 API와 UIImagePickerController를 공부하고 CoreML 모델을 사용해 카메라의 Live image 캡쳐를 위한 API와 이미지 분류 모델을 사용하여 실시간 카메라로 해당 물건이 무엇인지 분류하는 앱을 구현<br> 프로젝트에 YOLOv3.mlmodel과 SqueezeNet.mlmodel 추가 후 시현
+카메라 관련 API와 UIImagePickerController를 공부하고 CoreML 모델을 사용해 카메라의 Live image 캡쳐를 위한 API와 이미지 분류 모델을 사용하여 실시간 카메라로 해당 물건이 무엇인지 분류하는 앱을 구현<br> 프로젝트에 YOLOv3.mlmodel과 SqueezeNet.mlmodel 추가 다운로드 후 시현
 
 <br>
