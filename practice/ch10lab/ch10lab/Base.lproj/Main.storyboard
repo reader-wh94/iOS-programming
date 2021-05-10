@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainID" id="BYZ-38-t0r" customClass="ViewController" customModule="ch10lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CeV-qv-xbI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uah-a9-iI3">
+                                        <rect key="frame" x="129.5" y="0.0" width="155" height="215.5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="goto Other With Direct"/>
+                                        <connections>
+                                            <action selector="gotoOtherDirectly:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8Q-bV-x4t"/>
+                                            <segue destination="4xe-jF-Xzb" kind="presentation" identifier="jmlee" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="BrI-xg-3QD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-8N-OpK">
+                                        <rect key="frame" x="128" y="215.5" width="158" height="215.5"/>
+                                        <color key="backgroundColor" red="0.61574192770000002" green="1" blue="0.58093809220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="goto Other With Segue"/>
+                                        <connections>
+                                            <action selector="gotoOtherWithSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RhL-vn-7SB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLs-Ij-X9m">
+                                        <rect key="frame" x="123.5" y="431" width="167" height="215.5"/>
+                                        <state key="normal" title="goto Other With Present"/>
+                                        <connections>
+                                            <action selector="gotoOtherWithPresent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ami-AJ-eCI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLB-kT-Dv1">
+                                        <rect key="frame" x="133" y="646.5" width="148" height="215.5"/>
+                                        <state key="normal" title="goto Other With Push"/>
+                                        <connections>
+                                            <action selector="gotoOtherWithPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYm-L4-4Q4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CeV-qv-xbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yhn-mn-RHC"/>
+                            <constraint firstItem="CeV-qv-xbI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jnZ-r4-vo8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CeV-qv-xbI" secondAttribute="trailing" id="m09-ms-yda"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CeV-qv-xbI" secondAttribute="bottom" id="s73-OQ-1h5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
+        </scene>
+        <!--Other View Controller-->
+        <scene sceneID="pZD-qy-zWO">
+            <objects>
+                <viewController storyboardIdentifier="jmleeID" id="4xe-jF-Xzb" customClass="OtherViewController" customModule="ch10lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0oz-Qs-gLE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-FQ-bTJ">
+                                <rect key="frame" x="87.5" y="412" width="239" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Back Again"/>
+                                <connections>
+                                    <action selector="gotoBackAgain:" destination="4xe-jF-Xzb" eventType="touchUpInside" id="sL7-mw-TNC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RbQ-iH-vTE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yxS-FQ-bTJ" firstAttribute="centerX" secondItem="0oz-Qs-gLE" secondAttribute="centerX" id="WVZ-EJ-XER"/>
+                            <constraint firstItem="yxS-FQ-bTJ" firstAttribute="centerY" secondItem="0oz-Qs-gLE" secondAttribute="centerY" id="xB3-Sx-Zpi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BWT-Ew-aeY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WbR-IT-fXU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
